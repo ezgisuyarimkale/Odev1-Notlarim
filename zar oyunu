@@ -1,0 +1,37 @@
+Random zar = new Random();
+
+int birinciAtis = zar.Next(1, 21);
+int ikinciAtis = zar.Next(1, 21);
+int ucuncuiAtis = zar.Next(1, 21);
+int dorduncuiAtis = zar.Next(1, 21);
+int besinciAtis = zar.Next(1, 21);
+
+float ortalama = (birinciAtis + ikinciAtis + ucuncuiAtis) / 3f;
+
+if (ortalama > 15)
+{
+    Console.WriteLine("Büyülk Zarar Verdin!");
+
+}
+
+if (ortalama > 10 && ortalama <= 15) // aynı if e yazmak için ve
+{
+    Console.WriteLine("Ortalama Zarar Verdin!");
+}
+if(ortalama > 5 && ortalama <= 10)
+{
+    Console.WriteLine("Zarar Yok");
+}
+
+if (ortalama <=5)
+{
+    Console.WriteLine("Kendine Zarar Verdin");
+}
+
+if (dorduncuiAtis <= 5)
+{
+    Console.WriteLine("Ek Zarar Verdin");
+}
+
+Console.WriteLine(ortalama);
+Console.ReadLine();
